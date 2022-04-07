@@ -10,11 +10,13 @@
 </head>
 
 <body>
- <section class="calculator">
+<div id="app">
+ <!-- <section class="calculator"> -->
   <form>
-   <input type="text" name="" id="" class="screen">
+   <input v-model="result"  name="" id="" class="screen">
   </form>
-  <div class="buttons">
+  <div @click="keyPressed"  class="buttons">
+  
    <!-- yellow -->
    <button type="button" class="btn btn-yellow" data-num="*">*</button>
    <button type="button" class="btn btn-yellow" data-num="/">/</button>
@@ -35,20 +37,16 @@
    <button type="button" class="btn-equal btn-grey">=</button>
    <button type="button" class="btn-clear btn-grey">C</button>
 
-
   </div>
-
-
-
-
-
  </section>
+ </div>
 
 
 
-
-
- <script src="./app.js"></script>
+ <!-- vue -->
+ <script src="https://unpkg.com/vue@3"></script>
+<!-- script js -->
+ <script src="app.js"></script>
 </body>
 
 </html>
